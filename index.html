@@ -277,6 +277,7 @@ footer a{color:#fff}
  .cb{right:12px;bottom:calc(70px + env(safe-area-inset-bottom,0px));width:calc(100vw - 24px)}
 }
 /* Capa visual futurista: neón controlado, superficies profundas y retícula técnica */
+[hidden]{display:none!important}
 :root{--navy:#08152e;--navy2:#102d5e;--bg:#070d1b;--card:#0e1a32;--tx:#edf5ff;--mut:#adbed8;--line:#20395f;--cyan:#55e5ff;--or:#ff9a3d;--or2:#55e5ff;--or-strong:#c04e00;color-scheme:dark}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--navy:#08152e;--navy2:#102d5e;--bg:#070d1b;--card:#0e1a32;--tx:#edf5ff;--mut:#adbed8;--line:#20395f;--cyan:#55e5ff;--or:#ff9a3d;--or2:#55e5ff;--or-strong:#c04e00;color-scheme:dark}}
 :root[data-theme="dark"]{--navy:#08152e;--navy2:#102d5e;--bg:#070d1b;--card:#0e1a32;--tx:#edf5ff;--mut:#adbed8;--line:#20395f;--cyan:#55e5ff;--or:#ff9a3d;--or2:#55e5ff;--or-strong:#c04e00;color-scheme:dark}
@@ -358,7 +359,7 @@ footer a{color:#8beeff}
 <div class="hero-layout">
 <div class="hero-brand"><img src="logo.png" alt="Logo de Horizonte Laboral" width="160" height="160" decoding="async" fetchpriority="high"></div>
 <div class="hero-copy">
-<span class="tag">Promoción hasta el 31 de diciembre de 2026</span>
+<span class="tag" id="promo-tag">Promoción hasta el 31 de diciembre de 2026</span>
 <h1>Tu empleo ideal empieza con una <em>ruta estratégica</em></h1>
 <p>Una ruta de <b>7 fases</b> para fortalecer tu perfil, mejorar tu búsqueda y prepararte para entrevistas, con acompañamiento profesional.</p>
 <div class="hero-actions"><a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Quiero%20orientaci%C3%B3n%20sobre%20la%20ruta%20de%20empleabilidad." target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a><a class="btn ghost" href="#planes">Ver planes y precios</a></div>
@@ -392,22 +393,22 @@ footer a{color:#8beeff}
 <section class="plans" id="planes"><div class="w">
 <div class="kick">Precios de lanzamiento</div>
 <h2>Elige tu ruta y arranca este trimestre</h2>
-<p class="sub">Paquetes con precio especial frente a contratar cada servicio por separado. Promoción válida hasta el <b>31 de diciembre de 2026</b>.</p>
+<p class="sub" id="promo-copy">Paquetes con precio especial frente a contratar cada servicio por separado. Promoción válida hasta el <b>31 de diciembre de 2026</b>.</p>
 <div class="pg">
-<div class="plan"><h3>Plan Arranque</h3><div class="ph">Fases 1 y 2</div>
-<div class="old">Valor individual $90.000</div><div class="price">$69.900</div><span class="save">Ahorras $20.100</span>
-<ul><li>Hoja de vida profesional</li><li>Optimización para sistemas ATS</li><li>Carta de presentación laboral</li><li>Portafolio de anexos organizado</li><li>Diagnóstico de empleabilidad</li></ul>
-<a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Plan%20Arranque%20%28%2469.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero este plan</a></div>
+<div class="plan" data-plan-id="arranque"><h3 data-field="name">Plan Arranque</h3><div class="ph" data-field="phase">Fases 1 y 2</div>
+<div class="old" data-field="reference">Valor individual $90.000</div><div class="price" data-field="price">$69.900</div><span class="save" data-field="savings">Ahorras $20.100</span>
+<ul data-field="features"><li>Hoja de vida profesional</li><li>Optimización para sistemas ATS</li><li>Carta de presentación laboral</li><li>Portafolio de anexos organizado</li><li>Diagnóstico de empleabilidad</li></ul>
+<a class="btn" data-field="whatsapp" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Plan%20Arranque%20%28%2469.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero este plan</a></div>
 
-<div class="plan top"><span class="ribbon">⭐ MÁS ELEGIDO</span><h3>Plan Impulso</h3><div class="ph">Fases 1 a 5</div>
-<div class="old">Valor individual $265.000</div><div class="price">$189.900</div><span class="save">Ahorras $75.100</span>
-<ul><li>Todo el Plan Arranque</li><li>Configuración de perfil en LinkedIn</li><li>Plan personalizado de búsqueda de empleo</li><li>Paquete Plataformas de Empleo 360</li><li>Alertas y acompañamiento en postulaciones</li></ul>
-<a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Plan%20Impulso%20%28%24189.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero este plan</a></div>
+<div class="plan top" data-plan-id="impulso"><span class="ribbon">⭐ MÁS ELEGIDO</span><h3 data-field="name">Plan Impulso</h3><div class="ph" data-field="phase">Fases 1 a 5</div>
+<div class="old" data-field="reference">Valor individual $265.000</div><div class="price" data-field="price">$189.900</div><span class="save" data-field="savings">Ahorras $75.100</span>
+<ul data-field="features"><li>Todo el Plan Arranque</li><li>Configuración de perfil en LinkedIn</li><li>Plan personalizado de búsqueda de empleo</li><li>Paquete Plataformas de Empleo 360</li><li>Alertas y acompañamiento en postulaciones</li></ul>
+<a class="btn" data-field="whatsapp" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Plan%20Impulso%20%28%24189.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero este plan</a></div>
 
-<div class="plan"><h3>Ruta Completa 360</h3><div class="ph">Las 7 fases · mínimo 3 meses</div>
-<div class="old">Valor individual $530.000</div><div class="price">$349.900</div><span class="save">Ahorras $180.100</span>
-<ul><li>Todo el Plan Impulso</li><li>Paquete Perfil Profesional 360 (marca personal, portafolio y tarjeta digital)</li><li>Programa Preparación Laboral 360 (simulación de entrevista y pruebas)</li><li>Acompañamiento y orientación de principio a fin</li></ul>
-<a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Ruta%20Completa%20360%20%28%24349.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero la ruta completa</a></div>
+<div class="plan" data-plan-id="completa-360"><h3 data-field="name">Ruta Completa 360</h3><div class="ph" data-field="phase">Las 7 fases · mínimo 3 meses</div>
+<div class="old" data-field="reference">Valor individual $530.000</div><div class="price" data-field="price">$349.900</div><span class="save" data-field="savings">Ahorras $180.100</span>
+<ul data-field="features"><li>Todo el Plan Impulso</li><li>Paquete Perfil Profesional 360 (marca personal, portafolio y tarjeta digital)</li><li>Programa Preparación Laboral 360 (simulación de entrevista y pruebas)</li><li>Acompañamiento y orientación de principio a fin</li></ul>
+<a class="btn" data-field="whatsapp" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Ruta%20Completa%20360%20%28%24349.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero la ruta completa</a></div>
 </div>
 <p class="note">🛡️ Todos los servicios incluyen acompañamiento, entrega en PDF y Word editables y garantía de revisión.</p>
 </div></section>
@@ -430,7 +431,7 @@ footer a{color:#8beeff}
 <label class="sr-only" for="q">Buscar un servicio en el tarifario</label>
 <input id="q" class="srch" type="search" placeholder="🔎 Buscar servicio… (ej: LinkedIn, ATS, entrevista)">
 <div class="tabs" role="tablist" aria-label="Categorías de servicios"><button class="tab on" id="tab-btn-0" role="tab" aria-selected="true" aria-controls="tab-0" data-t="0">🚀 Impulso Laboral 360</button><button class="tab" id="tab-btn-1" role="tab" aria-selected="false" aria-controls="tab-1" data-t="1">👔 Preparación Laboral 360</button><button class="tab" id="tab-btn-2" role="tab" aria-selected="false" aria-controls="tab-2" data-t="2">💼 Plataformas de Empleo</button><button class="tab" id="tab-btn-3" role="tab" aria-selected="false" aria-controls="tab-3" data-t="3">👤 Perfil Profesional 360</button></div>
-<div class="tp on" id="tab-0" role="tabpanel" aria-labelledby="tab-btn-0" data-t="0">
+<div class="tp on" id="tab-0" role="tabpanel" aria-labelledby="tab-btn-0" data-t="0" data-category="Impulso Laboral 360">
 <div class="row"><div><h3>Elaboración de hoja de vida básica</h3><p>Diseño y elaboración de una hoja de vida clara, organizada y profesional con la información esencial para procesos de selección y postulaciones laborales.</p></div><div class="pr">$30.000</div></div>
 <div class="row"><div><h3>Elaboración de hoja de vida profesional</h3><p>Creación de una hoja de vida con estructura profesional, diseño moderno y contenido optimizado para destacar las competencias, logros y experiencia del candidato.</p></div><div class="pr">$30.000</div></div>
 <div class="row"><div><h3>Actualización y Rediseño de Hoja de Vida</h3><p>Actualización de información, experiencia laboral, estudios, cursos, competencias y mejora del diseño para mantener el documento vigente.</p></div><div class="pr">$30.000</div></div>
@@ -448,7 +449,7 @@ footer a{color:#8beeff}
 <div class="row"><div><h3>Plan personalizado de Búsqueda de Empleo</h3><p>Diseño de una estrategia de búsqueda laboral con recomendaciones sobre plataformas, tipo de vacantes, frecuencia de postulación y organización del proceso.</p></div><div class="pr">$50.000</div></div>
 <div class="row pk"><div><h3>Paquete Integral de Empleabilidad</h3><p>Servicio completo que incluye hoja de vida profesional, optimización ATS, carta de presentación, organización de anexos y diagnóstico de empleabilidad.</p></div><div class="pr">$90.000</div></div>
 </div>
-<div class="tp" id="tab-1" role="tabpanel" aria-labelledby="tab-btn-1" data-t="1" hidden>
+<div class="tp" id="tab-1" role="tabpanel" aria-labelledby="tab-btn-1" data-t="1" data-category="Preparación Laboral 360" hidden>
 <div class="row"><div><h3>Taller para entrevista laboral</h3><p>Sesión personalizada para preparar al candidato antes de una entrevista, con recomendaciones sobre actitud, comunicación, presentación personal y manejo de preguntas frecuentes.</p></div><div class="pr">$50.000</div></div>
 <div class="row"><div><h3>Taller simulación entrevista laboral</h3><p>Práctica guiada mediante una entrevista simulada con retroalimentación profesional para fortalecer la confianza y mejorar el desempeño del candidato.</p></div><div class="pr">$50.000</div></div>
 <div class="row"><div><h3>Taller preparación para entrevistas virtuales</h3><p>Asesoría para afrontar entrevistas por videollamada, incluyendo aspectos técnicos, comunicación, imagen, iluminación y comportamiento profesional.</p></div><div class="pr">$30.000</div></div>
@@ -456,7 +457,7 @@ footer a{color:#8beeff}
 <div class="row"><div><h3>Taller preparación para pruebas de conocimiento</h3><p>Asesoría para afrontar evaluaciones técnicas o de conocimientos requeridas en procesos de selección de diferentes sectores.</p></div><div class="pr">$60.000</div></div>
 <div class="row pk"><div><h3>Programa Preparación Laboral 360</h3><p>Taller integral que incluye elaboración de perfil, simulación de entrevista, preparación para pruebas y creación de perfil en portales de empleabilidad.</p></div><div class="pr">$150.000</div></div>
 </div>
-<div class="tp" id="tab-2" role="tabpanel" aria-labelledby="tab-btn-2" data-t="2" hidden>
+<div class="tp" id="tab-2" role="tabpanel" aria-labelledby="tab-btn-2" data-t="2" data-category="Plataformas de Empleo" hidden>
 <div class="row"><div><h3>Registro en Plataformas de Empleo</h3><p>Creación y configuración inicial del perfil en las principales plataformas de empleo para facilitar la búsqueda de oportunidades laborales.</p></div><div class="pr">$20.000</div></div>
 <div class="row"><div><h3>Actualización de Perfiles en Plataformas de Empleo</h3><p>Actualización de la información personal, experiencia laboral, estudios, habilidades y demás datos del perfil para mantenerlo vigente y competitivo.</p></div><div class="pr">$20.000</div></div>
 <div class="row"><div><h3>Optimización de Perfiles en Plataformas de Empleo</h3><p>Optimización estratégica del perfil mediante palabras clave, competencias y mejoras en la información para incrementar la visibilidad ante reclutadores.</p></div><div class="pr">$30.000</div></div>
@@ -469,7 +470,7 @@ footer a{color:#8beeff}
 <div class="row"><div><h3>Taller uso de plataformas de empleo</h3><p>Taller para aprender a utilizar correctamente los principales portales de empleo, mejorar las postulaciones y aprovechar sus herramientas.</p></div><div class="pr">$35.000</div></div>
 <div class="row pk"><div><h3>Paquete Plataformas de Empleo 360</h3><p>Servicio integral que incluye la creación u optimización de perfiles en las principales plataformas de empleo, configuración de alertas, estrategia de búsqueda y acompañamiento en postulaciones.</p></div><div class="pr">$90.000</div></div>
 </div>
-<div class="tp" id="tab-3" role="tabpanel" aria-labelledby="tab-btn-3" data-t="3" hidden>
+<div class="tp" id="tab-3" role="tabpanel" aria-labelledby="tab-btn-3" data-t="3" data-category="Perfil Profesional 360" hidden>
 <div class="row"><div><h3>Elaboración de Perfil Profesional</h3><p>Redacción de un perfil profesional claro, estratégico y orientado a destacar competencias, experiencia, fortalezas y objetivos para diferentes escenarios laborales o comerciales.</p></div><div class="pr">$20.000</div></div>
 <div class="row"><div><h3>Optimización de Perfil Profesional</h3><p>Revisión y mejora del perfil profesional existente, fortaleciendo su estructura, redacción e impacto para proyectar una imagen más competitiva.</p></div><div class="pr">$25.000</div></div>
 <div class="row"><div><h3>Creación y/o Optimización de perfil para LinkedIn</h3><p>Diseño y configuración profesional del perfil de LinkedIn, incluyendo fotografía sugerida, titular, extracto, experiencia, habilidades y recomendaciones.</p></div><div class="pr">$35.000</div></div>
@@ -577,5 +578,9 @@ function filter(){
 }
 qi.addEventListener("input",filter);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="supabase-client.js"></script>
+<script src="site-data.js"></script>
 </body>
 </html>

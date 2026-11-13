@@ -14,34 +14,71 @@
 <body>
   <header class="auth-topbar admin-topbar">
     <a class="auth-brand" href="index.html"><img src="logo.png" alt=""><span>HORIZONTE LABORAL <small>ADMIN</small></span></a>
-    <div class="admin-top-actions"><a class="auth-back" href="index.html">Ver sitio público</a><button class="auth-secondary" id="adminLogout" type="button">Cerrar sesión</button></div>
+    <div class="admin-top-actions"><a class="auth-back" href="index.html">Ver sitio público</a><span class="admin-email" id="adminEmail"></span><button class="auth-secondary" id="adminLogout" type="button">Cerrar sesión</button></div>
   </header>
   <main class="account-shell admin-shell">
     <p class="account-loading" id="adminLoading" role="status" aria-live="polite">Verificando permisos de administrador…</p>
-    <section class="account-card admin-card" id="adminPanel" hidden aria-labelledby="adminTitle">
+    <section class="admin-panel" id="adminPanel" hidden aria-labelledby="adminTitle">
       <div class="admin-heading">
-        <div><span class="account-role">PANEL PRIVADO · ADMINISTRADOR</span><h1 id="adminTitle">Panel de administración</h1><p class="auth-intro">Hola, <strong id="adminName">Administrador</strong></p></div>
+        <div><span class="account-role">PANEL PRIVADO · ADMINISTRADOR</span><h1 id="adminTitle">Panel de administración</h1><p class="auth-intro">Gestiona precios, promociones y cuentas.</p></div>
         <span class="admin-status"><i aria-hidden="true"></i> Acceso verificado</span>
       </div>
-      <section class="admin-welcome" aria-labelledby="adminWelcomeTitle">
-        <div class="admin-emblem" aria-hidden="true">HL</div>
-        <div>
-          <p class="auth-kicker">ESPACIO DE TRABAJO</p>
-          <h2 id="adminWelcomeTitle">Tu panel está listo para configurarse</h2>
-          <p>La sesión y el rol de administrador están conectados. Aún no añadí herramientas ni datos para no asumir cómo quieres gestionar el negocio.</p>
-          <p class="admin-hint">Dime qué quieres administrar primero y lo construiremos paso a paso.</p>
+      <nav class="admin-tabs" role="tablist" aria-label="Secciones del panel">
+        <button class="admin-tab active" type="button" role="tab" aria-selected="true" data-view="overview">Resumen</button>
+        <button class="admin-tab" type="button" role="tab" aria-selected="false" data-view="services">Servicios y precios</button>
+        <button class="admin-tab" type="button" role="tab" aria-selected="false" data-view="plans">Planes</button>
+        <button class="admin-tab" type="button" role="tab" aria-selected="false" data-view="promotion">Promociones</button>
+        <button class="admin-tab" type="button" role="tab" aria-selected="false" data-view="accounts">Cuentas</button>
+      </nav>
+
+      <section class="admin-view account-card" id="view-overview" aria-labelledby="overviewTitle">
+        <p class="auth-kicker">ESTADO DEL SITIO</p>
+        <h2 id="overviewTitle">Resumen</h2>
+        <p class="auth-intro">Desde aquí puedes actualizar el catálogo público y revisar las cuentas creadas.</p>
+        <div class="admin-summary-grid">
+          <article class="admin-summary"><span>Servicios activos</span><strong id="serviceCount">—</strong></article>
+          <article class="admin-summary"><span>Planes activos</span><strong id="planCount">—</strong></article>
+          <article class="admin-summary"><span>Cuentas registradas</span><strong id="accountCount">—</strong></article>
         </div>
+        <p class="auth-note">Los cambios de precios y promoción se reflejan en la página pública después de guardarlos.</p>
       </section>
-      <div class="admin-suggestions" aria-label="Ideas para definir el panel">
-        <span>Podríamos empezar por:</span>
-        <span class="admin-chip">Usuarios</span>
-        <span class="admin-chip">Servicios y precios</span>
-        <span class="admin-chip">Solicitudes</span>
-      </div>
-      <p class="auth-status" id="adminStatus" role="status" aria-live="polite"></p>
+
+      <section class="admin-view account-card" id="view-services" aria-labelledby="servicesTitle" hidden>
+        <p class="auth-kicker">CATÁLOGO</p><h2 id="servicesTitle">Servicios y precios</h2>
+        <p class="auth-intro">Edita el precio en pesos colombianos y guarda cada fila.</p>
+        <p class="auth-status" id="servicesStatus" role="status" aria-live="polite"></p>
+        <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Servicio</th><th>Categoría</th><th>Precio COP</th><th>Activo</th><th></th></tr></thead><tbody id="servicesRows"></tbody></table></div>
+      </section>
+
+      <section class="admin-view account-card" id="view-plans" aria-labelledby="plansTitle" hidden>
+        <p class="auth-kicker">PAQUETES</p><h2 id="plansTitle">Planes y precios promocionales</h2>
+        <p class="auth-intro">Define el valor de referencia y el precio promocional de cada plan.</p>
+        <p class="auth-status" id="plansStatus" role="status" aria-live="polite"></p>
+        <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Plan</th><th>Precio de referencia</th><th>Precio promo</th><th>Destacado</th><th>Activo</th><th></th></tr></thead><tbody id="plansRows"></tbody></table></div>
+      </section>
+
+      <section class="admin-view account-card" id="view-promotion" aria-labelledby="promotionTitle" hidden>
+        <p class="auth-kicker">CAMPAÑA PÚBLICA</p><h2 id="promotionTitle">Lanzar o pausar promoción</h2>
+        <p class="auth-intro">La promoción controla el anuncio y el uso de los precios promo de los planes.</p>
+        <form class="admin-promo-form" id="promotionForm">
+          <div class="auth-field"><label for="promoName">Nombre de la promoción</label><input id="promoName" maxlength="100" required></div>
+          <div class="admin-date-grid"><div class="auth-field"><label for="promoStart">Fecha de inicio</label><input id="promoStart" type="date" required></div><div class="auth-field"><label for="promoEnd">Fecha de finalización</label><input id="promoEnd" type="date" required></div></div>
+          <label class="admin-check"><input id="promoActive" type="checkbox"><span>Promoción activa</span></label>
+          <button class="auth-submit" type="submit">Guardar promoción</button>
+        </form>
+        <p class="auth-status" id="promotionStatus" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="admin-view account-card" id="view-accounts" aria-labelledby="accountsTitle" hidden>
+        <p class="auth-kicker">ACCESO</p><h2 id="accountsTitle">Cuentas registradas</h2>
+        <p class="auth-intro">Consulta quién se registró, cuándo y el origen. La eliminación es permanente y pide confirmación.</p>
+        <p class="auth-status" id="accountsStatus" role="status" aria-live="polite"></p>
+        <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Nombre</th><th>Correo</th><th>Rol</th><th>Creada</th><th>Origen</th><th></th></tr></thead><tbody id="accountsRows"></tbody></table></div>
+      </section>
+      <p class="admin-footer-note">Panel privado · Las funciones administrativas requieren rol verificado en Supabase.</p>
     </section>
   </main>
-  <footer class="auth-footer">Panel privado de Horizonte Laboral</footer>
+  <footer class="auth-footer">Administración de Horizonte Laboral</footer>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
   <script src="supabase-client.js"></script>
