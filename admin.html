@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070d1b">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Panel de administración | Horizonte Laboral</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <header class="auth-topbar admin-topbar">
+    <a class="auth-brand" href="index.html"><img src="logo.png" alt=""><span>HORIZONTE LABORAL <small>ADMIN</small></span></a>
+    <div class="admin-top-actions"><a class="auth-back" href="index.html">Ver sitio público</a><button class="auth-secondary" id="adminLogout" type="button">Cerrar sesión</button></div>
+  </header>
+  <main class="account-shell admin-shell">
+    <p class="account-loading" id="adminLoading" role="status" aria-live="polite">Verificando permisos de administrador…</p>
+    <section class="account-card admin-card" id="adminPanel" hidden aria-labelledby="adminTitle">
+      <div class="admin-heading">
+        <div><span class="account-role">PANEL PRIVADO · ADMINISTRADOR</span><h1 id="adminTitle">Panel de administración</h1><p class="auth-intro">Hola, <strong id="adminName">Administrador</strong></p></div>
+        <span class="admin-status"><i aria-hidden="true"></i> Acceso verificado</span>
+      </div>
+      <section class="admin-welcome" aria-labelledby="adminWelcomeTitle">
+        <div class="admin-emblem" aria-hidden="true">HL</div>
+        <div>
+          <p class="auth-kicker">ESPACIO DE TRABAJO</p>
+          <h2 id="adminWelcomeTitle">Tu panel está listo para configurarse</h2>
+          <p>La sesión y el rol de administrador están conectados. Aún no añadí herramientas ni datos para no asumir cómo quieres gestionar el negocio.</p>
+          <p class="admin-hint">Dime qué quieres administrar primero y lo construiremos paso a paso.</p>
+        </div>
+      </section>
+      <div class="admin-suggestions" aria-label="Ideas para definir el panel">
+        <span>Podríamos empezar por:</span>
+        <span class="admin-chip">Usuarios</span>
+        <span class="admin-chip">Servicios y precios</span>
+        <span class="admin-chip">Solicitudes</span>
+      </div>
+      <p class="auth-status" id="adminStatus" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer class="auth-footer">Panel privado de Horizonte Laboral</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

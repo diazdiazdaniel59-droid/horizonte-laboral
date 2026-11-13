@@ -39,7 +39,7 @@
     if (result.error || !result.data) {
       throw new Error("No pudimos verificar tu perfil. Comprueba que ejecutaste supabase.sql y que la tabla profiles tiene las políticas RLS.");
     }
-    window.location.assign("cuenta.html");
+    window.location.assign(result.data.role === "admin" ? "admin.html" : "cuenta.html");
   }
 
   document.getElementById("loginTab").addEventListener("click", function () { setMode("login"); });

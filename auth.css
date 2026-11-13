@@ -53,5 +53,24 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #8bee
 .account-actions a{display:inline-flex;align-items:center;min-height:44px;padding:10px 15px;border:1px solid #55e5ff56;border-radius:10px;text-decoration:none;font-size:.86rem;font-weight:600}
 .account-actions button{min-height:44px;padding:10px 15px;border:1px solid #ffcf9a;border-radius:10px;background:var(--auth-orange);color:white;font:inherit;font-size:.86rem;font-weight:700;cursor:pointer}
 .account-loading{color:#8beeff}
+.auth-brand small{margin-left:7px;padding:3px 6px;border:1px solid #55e5ff55;border-radius:6px;color:#8beeff;font-size:.58rem;letter-spacing:.1em}
+.admin-top-actions{display:flex;align-items:center;gap:16px}
+.admin-top-actions .auth-secondary{min-height:40px;padding:8px 12px;font-size:.82rem}
+.admin-card{width:100%;max-width:1040px}
+.admin-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:30px}
+.admin-heading h1{margin:8px 0 5px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,5vw,3rem);line-height:1.1}
+.admin-heading .auth-intro{margin:0}
+.admin-heading .auth-intro strong{color:#fff}
+.admin-status{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid #55e5ff47;border-radius:999px;background:#55e5ff0b;color:#8beeff;font-size:.76rem;font-weight:600;white-space:nowrap}
+.admin-status i{width:8px;height:8px;border-radius:50%;background:#72e9a3;box-shadow:0 0 12px #72e9a3}
+.admin-welcome{display:grid;grid-template-columns:78px minmax(0,1fr);align-items:start;gap:22px;padding:clamp(20px,4vw,32px);border:1px solid #55e5ff42;border-radius:17px;background:radial-gradient(ellipse at 0 0,#55e5ff12,transparent 48%),linear-gradient(145deg,#0b1b33,#091427)}
+.admin-emblem{display:grid;place-items:center;width:66px;height:66px;border:1px solid #55e5ff94;border-radius:18px;background:#55e5ff0d;color:#8beeff;font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;font-weight:800;box-shadow:0 0 24px #55e5ff1e}
+.admin-welcome .auth-kicker{margin:0 0 7px}
+.admin-welcome h2{margin:0 0 10px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.35rem,3vw,1.8rem)}
+.admin-welcome p{max-width:680px;margin:0;color:var(--auth-muted);font-size:.92rem}
+.admin-welcome .admin-hint{margin-top:12px;color:#dce8f7}
+.admin-suggestions{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:22px;color:var(--auth-muted);font-size:.82rem}
+.admin-chip{padding:6px 10px;border:1px solid #55e5ff32;border-radius:999px;background:#55e5ff08;color:#c6f7ff}
+@media(max-width:620px){.admin-top-actions{gap:9px}.admin-top-actions .auth-back{display:none}.admin-heading{flex-direction:column}.admin-status{order:-1}.admin-welcome{grid-template-columns:1fr;gap:16px}.admin-emblem{width:54px;height:54px;border-radius:15px}}
 @media(max-width:520px){.auth-topbar{padding:15px 16px}.auth-brand{font-size:.76rem}.auth-brand img{width:36px;height:36px}.auth-back{font-size:.78rem}.auth-shell{min-height:calc(100vh - 70px);padding-top:12px}.auth-links{flex-direction:column}.account-head{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
