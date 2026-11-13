@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ruta estratégica de empleabilidad en 7 fases: hoja de vida, LinkedIn, postulaciones y preparación para entrevistas. Horizonte Laboral, conectando talento con oportunidades.">
+<meta name="theme-color" content="#002a64">
+<meta name="color-scheme" content="light dark">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Horizonte Laboral">
+<meta property="og:title" content="Ruta de Empleabilidad 360 | Horizonte Laboral">
+<meta property="og:description" content="Consigue tu empleo ideal con una ruta de 7 fases. Planes con precio especial.">
+<meta property="og:type" content="website">
+<title>Ruta de Empleabilidad 360 | Horizonte Laboral</title>
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#002a64;--navy2:#0a3f8f;--or:#f96c00;--or2:#ff9a3d;--bg:#f6f8fc;--card:#fff;--tx:#17233a;--mut:#5b6980;--line:#e1e7f0;--f-h:'Playfair Display',Georgia,serif;--f-b:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1426;--card:#122244;--tx:#eef2fa;--mut:#a9b6cc;--line:#25375e}}
+:root[data-theme="dark"]{--bg:#0b1426;--card:#122244;--tx:#eef2fa;--mut:#a9b6cc;--line:#25375e}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:var(--f-b);line-height:1.55;font-style:italic}
+h1,h2,h3{font-style:italic}
+h1,h2,h3{font-family:var(--f-h);margin:0;line-height:1.15}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.hero{background:radial-gradient(circle at 85% 10%,#1a5bc4 0,transparent 45%),linear-gradient(160deg,var(--navy),#001a40);color:#fff;padding:36px 0 64px;text-align:center;position:relative;overflow:hidden}
+.hero img{width:112px;height:112px;border-radius:50%;background:#fff;padding:3px;box-shadow:0 8px 30px #0006}
+.tag{display:inline-block;background:var(--or);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:99px;margin:18px 0 14px}
+.hero h1{font-size:clamp(2rem,6.4vw,3.4rem);max-width:760px;margin:0 auto 14px}
+.hero h1 em{color:var(--or2);font-style:italic}
+.hero p{max-width:620px;margin:0 auto 26px;color:#d6e2f7;font-size:1.05rem}
+.btn{display:inline-block;text-align:center;background:var(--or);color:#fff;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:12px;border:0;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 6px 18px #f96c0055;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:2px solid #ffffff66;box-shadow:none;margin-left:8px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;margin-top:34px;color:#d6e2f7;font-size:.9rem}
+.stats b{color:#fff;display:block;font-size:1.4rem;font-family:var(--f-h)}
+.kick{color:var(--or);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem);margin:6px 0 10px;color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:#fff}}
+:root[data-theme="dark"] h2{color:#fff}
+.sub{color:var(--mut);max-width:640px;margin:0 0 30px}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;position:relative;border-top:4px solid var(--or)}
+.step .n{position:absolute;top:-16px;right:16px;background:var(--navy);color:#fff;font-family:var(--f-h);font-weight:800;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:3px solid var(--bg)}
+.step .ic{font-size:1.7rem}
+.step h3{font-size:1.1rem;margin:6px 0 6px;color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .step h3{color:#fff}}
+:root[data-theme="dark"] .step h3{color:#fff}
+.step p{margin:0;color:var(--mut);font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chips span{background:#f96c0018;color:var(--or);font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:99px}
+.plans{background:linear-gradient(180deg,var(--bg),#e8eef9)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .plans{background:#0e1a33}}
+:root[data-theme="dark"] .plans{background:#0e1a33}
+.pg{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));align-items:stretch}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 22px;display:flex;flex-direction:column;position:relative}
+.plan.top{border:3px solid var(--or);box-shadow:0 14px 40px #f96c0030;transform:scale(1.02)}
+.ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--or);color:#fff;font-size:.74rem;font-weight:700;padding:5px 16px;border-radius:99px;white-space:nowrap}
+.plan h3{font-size:1.45rem;color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .plan h3{color:#fff}}
+:root[data-theme="dark"] .plan h3{color:#fff}
+.ph{color:var(--or);font-weight:600;font-size:.85rem;margin:2px 0 14px}
+.old{color:var(--mut);text-decoration:line-through;font-size:.95rem}
+.price{font-family:var(--f-h);font-size:2.5rem;font-weight:800;color:var(--navy);line-height:1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .price{color:#fff}}
+:root[data-theme="dark"] .price{color:#fff}
+.save{display:inline-block;background:#12a15022;color:#0d8a43;font-weight:700;font-size:.8rem;padding:3px 10px;border-radius:99px;margin:8px 0 14px}
+.plan ul{list-style:none;padding:0;margin:0 0 20px;flex:1;font-size:.9rem}
+.plan li{padding:6px 0 6px 26px;position:relative;border-bottom:1px dashed var(--line)}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--or);font-weight:800}
+.plan .btn{text-align:center;width:100%}
+.note{text-align:center;color:var(--mut);font-size:.85rem;margin-top:22px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+summary{cursor:pointer;padding:16px 18px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";color:var(--or);font-size:1.3rem;font-weight:700}
+details[open] summary::after{content:"–"}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+td{padding:10px 18px;border-top:1px solid var(--line)}
+td:last-child{text-align:right;font-weight:700;color:var(--or);white-space:nowrap}
+tr.pk td{background:#f96c0014;font-weight:700}
+.g{background:var(--navy);color:#fff;border-radius:20px;padding:28px;text-align:center}
+.g h3{color:var(--or2);margin-bottom:8px;font-size:1.4rem}
+.g p{margin:0 auto;max-width:640px;color:#d6e2f7}
+.cta{background:linear-gradient(160deg,var(--navy),#001a40);color:#fff;text-align:center;padding:60px 0 90px}
+.cta h2{color:#fff}
+.cta p{color:#d6e2f7;max-width:560px;margin:0 auto 24px}
+footer{background:#001333;color:#9fb1cf;text-align:center;font-size:.8rem;padding:22px 20px calc(22px + 70px)}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;text-decoration:none;font-weight:700;padding:13px 20px;border-radius:99px;box-shadow:0 8px 24px #0005;z-index:20;font-size:.95rem}
+@media (max-width:520px){.btn.ghost{margin:10px 0 0}.plan.top{transform:none}}
+.hero .w{position:relative;z-index:1}
+.hero{background-size:140% 140%;animation:shift 14s ease-in-out infinite alternate}
+@keyframes shift{from{background-position:0% 0%}to{background-position:100% 100%}}
+.orb{position:absolute;border-radius:50%;filter:blur(50px);opacity:.45;pointer-events:none}
+.o1{width:260px;height:260px;background:var(--or);top:-60px;left:-70px;animation:fl1 11s ease-in-out infinite alternate}
+.o2{width:320px;height:320px;background:#1a5bc4;bottom:-120px;right:-80px;animation:fl2 13s ease-in-out infinite alternate}
+.o3{width:160px;height:160px;background:var(--or2);top:38%;right:12%;opacity:.28;animation:fl1 9s ease-in-out infinite alternate-reverse}
+@keyframes fl1{to{transform:translate(70px,50px) scale(1.2)}}
+@keyframes fl2{to{transform:translate(-80px,-40px) scale(1.15)}}
+.hero img{animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.rot{min-height:2.4em;margin:0 auto 14px;max-width:640px;font-family:var(--f-h);font-size:clamp(1.15rem,3.6vw,1.6rem);color:var(--or2);font-weight:700;transition:opacity .5s,transform .5s}
+.rot.out{opacity:0;transform:translateY(10px)}
+.rot2{color:var(--or2);margin-bottom:18px}
+.mq{background:var(--or);color:#fff;overflow:hidden;white-space:nowrap;padding:11px 0;font-weight:600;font-size:.92rem}
+.mq-t{display:inline-block;animation:mq 38s linear infinite}
+.mq-t span{margin:0 26px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.plan.top.rv.in{transform:scale(1.02)}
+@media (max-width:520px){.plan.top.rv.in{transform:none}}
+.plan.top .btn,.fab{animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #f96c0088}70%{box-shadow:0 0 0 16px #f96c0000}100%{box-shadow:0 0 0 0 #f96c0000}}
+.fab{animation-name:pulseg}
+@keyframes pulseg{0%{box-shadow:0 0 0 0 #25d36688}70%{box-shadow:0 0 0 16px #25d36600}100%{box-shadow:0 0 0 0 #25d36600}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.aviso{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--or);border-radius:16px;padding:20px;margin-top:16px}
+.aviso .ai{font-size:2rem;line-height:1}
+.aviso h3{font-size:1.15rem;margin-bottom:6px;color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .aviso h3{color:#fff}}
+:root[data-theme="dark"] .aviso h3{color:#fff}
+.aviso p{margin:0;color:var(--mut);font-size:.92rem}
+.pl b{display:block;margin-top:14px;font-size:.8rem;color:var(--tx);font-style:italic}
+.chips.pub span{background:#12a15022;color:#0d8a43}
+
+.srch{width:100%;max-width:520px;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--tx);font:inherit;margin-bottom:16px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--tx);font:inherit;font-weight:600;padding:10px 16px;border-radius:99px;cursor:pointer}
+.tab.on{background:var(--or);border-color:var(--or);color:#fff}
+.tp{display:none}.tp.on{display:block}
+.row{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+.row h3{margin:0 0 3px;font-size:1rem;font-family:var(--f-b);color:var(--tx)}
+.row p{margin:0;color:var(--mut);font-size:.86rem}
+.pr{font-family:var(--f-h);font-weight:800;font-size:1.25rem;color:var(--or);white-space:nowrap}
+.row.pk{border:2px solid var(--or);background:#f96c0012}
+.row.pk h3::before{content:"⭐ "}
+.cbl{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--navy);color:#fff;border:0;font:inherit;font-weight:700;padding:13px 20px;border-radius:99px;box-shadow:0 8px 24px #0005;z-index:21;cursor:pointer}
+.cb{position:fixed;left:16px;bottom:calc(76px + env(safe-area-inset-bottom,0px));width:min(370px,calc(100vw - 32px));height:min(520px,calc(100dvh - 130px));background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 16px 48px #0006;z-index:22;display:none;flex-direction:column;overflow:hidden}
+.cb.open{display:flex}
+.cbh{background:linear-gradient(160deg,var(--navy),#0a3f8f);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:700}
+.cbh small{display:block;font-weight:400;color:#cfe0ff;font-size:.74rem}
+.cbh button{background:none;border:0;color:#fff;font-size:1.3rem;cursor:pointer}
+.cbm{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;font-size:.9rem}
+.m{max-width:86%;padding:10px 13px;border-radius:14px;line-height:1.45}
+.m.b{background:var(--bg);color:var(--tx);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.m.u{background:var(--or);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.m a{color:var(--or);font-weight:700}
+.m .it{display:flex;justify-content:space-between;gap:10px;border-top:1px dashed var(--line);padding:5px 0}
+.m .it b:last-child{color:var(--or);white-space:nowrap}
+.cbc{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}
+.cbc button{background:#f96c0018;color:var(--or);border:1px solid #f96c0055;border-radius:99px;font:inherit;font-size:.78rem;font-weight:600;padding:6px 12px;cursor:pointer}
+.cbf{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line)}
+.cbf input{flex:1;min-width:0;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font:inherit}
+.cbf button{background:var(--or);color:#fff;border:0;border-radius:10px;padding:0 16px;font-weight:700;cursor:pointer;font:inherit}
+.dots span{display:inline-block;width:6px;height:6px;margin:0 2px;border-radius:50%;background:var(--mut);animation:bl 1s infinite}
+.dots span:nth-child(2){animation-delay:.2s}.dots span:nth-child(3){animation-delay:.4s}
+@keyframes bl{50%{opacity:.2}}
+ @media (max-width:520px){.row{flex-direction:column;gap:6px}}
+/* Acabado visual, navegación y accesibilidad */
+:root{--or-strong:#c04e00;scroll-padding-top:78px}
+body{font-style:normal}
+h1,h2,h3{font-style:normal}
+h1 em{font-style:italic}
+.w{max-width:1160px}
+.skip-link{position:fixed;top:8px;left:8px;z-index:100;background:#fff;color:var(--navy);padding:10px 14px;border-radius:8px;transform:translateY(-150%)}
+.skip-link:focus{transform:translateY(0)}
+.site-nav{position:sticky;top:0;z-index:30;background:rgba(0,26,64,.97);color:#fff;border-bottom:1px solid #ffffff24;backdrop-filter:blur(12px)}
+.nav-inner{max-width:1160px;min-height:66px;margin:auto;padding:8px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.02em;white-space:nowrap}
+.nav-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--or-strong);font-family:var(--f-h);font-size:1.05rem}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)}
+.nav-links a{color:#e8efff;text-decoration:none;font-size:.88rem;font-weight:500;white-space:nowrap}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--or2)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #ffad61;outline-offset:3px}
+section{scroll-margin-top:78px}
+.hero{padding-top:52px}
+.tag,.btn,.ribbon,.mq,.tab.on,.cbf button{background:var(--or-strong)}
+.tab.on{border-color:var(--or-strong)}
+.fab{background:#12803c}
+.hero img{object-fit:cover}
+.step,.plan,.row,details{box-shadow:0 8px 24px #002a640c;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.step:hover,.plan:hover,.row:hover{transform:translateY(-3px);box-shadow:0 14px 32px #002a6418}
+.plan.top:hover{transform:scale(1.02) translateY(-3px)}
+.btn{font-style:normal}
+.btn:focus-visible,.tab:focus-visible,.cbl:focus-visible,.fab:focus-visible{outline-color:var(--or2)}
+.faq{background:var(--card)}
+.faq-list{max-width:850px}
+.faq details{margin-bottom:12px}
+.faq summary{align-items:center}
+.faq details p{margin:0;padding:0 18px 18px;color:var(--mut)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.tp[hidden]{display:none}
+.footer-inner{max-width:1160px;margin:auto;display:grid;gap:8px}
+footer a{color:#fff}
+@media(max-width:680px){
+ .nav-inner{min-height:unset;flex-wrap:wrap;gap:8px 14px;padding:10px 16px}
+ .nav-links{width:100%;justify-content:space-between;gap:12px;overflow-x:auto;padding:2px 0 4px}
+ .nav-links a{font-size:.8rem}
+ .hero{padding-top:36px}
+ .plan.top:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.step,.plan,.row,details{transition:none}}
+/* Dirección visual base: sobria, ordenada y centrada en la conversión */
+:root{--or:#b84b00;--or-strong:#c04e00}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--or:#ff9a3d;--or-strong:#c04e00}}
+:root[data-theme="dark"]{--or:#ff9a3d;--or-strong:#c04e00}
+.save,.chips.pub span{color:#087a3a}
+.proof-icon{color:#b84b00}
+.hero{padding:68px 0 38px;text-align:left;background:linear-gradient(130deg,#002a64,#073b78);background-size:auto;animation:none}
+.hero-layout{display:grid;grid-template-columns:minmax(180px,260px) minmax(0,1fr);align-items:center;gap:clamp(32px,7vw,88px);max-width:1000px;margin:auto}
+.hero-brand{display:grid;place-items:center}
+.hero img{display:block;width:clamp(170px,21vw,230px);height:auto;border:6px solid #fff;border-radius:50%;padding:3px;background:#fff;box-shadow:0 12px 32px #00132c55;animation:none}
+.hero-copy{max-width:680px}
+.hero-copy .tag{margin:0 0 18px;padding:7px 13px;font-size:.76rem;letter-spacing:.025em;text-transform:none}
+.hero h1{max-width:680px;margin:0 0 18px;font-size:clamp(2.25rem,4.6vw,3.65rem);letter-spacing:-.025em}
+.hero h1 em{color:#ffc178}
+.hero-copy p{max-width:620px;margin:0 0 26px;color:#e0e9f7;font-size:1.04rem}
+.hero-actions,.cta-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.hero .btn,.cta .btn{padding:13px 20px;border-radius:10px;box-shadow:none}
+.hero .btn:not(.ghost),.cta .btn:not(.btn-outline){background:var(--or-strong)}
+.hero .btn.ghost{margin:0;border:1px solid #ffffff80;color:#fff}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px #001a4033}
+.hero .btn.ghost:hover,.cta .btn-outline:hover{background:#ffffff18}
+.stats{max-width:1000px;margin:38px auto 0;padding-top:22px;border-top:1px solid #ffffff30;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;color:#d6e2f7}
+.stats>div{display:flex;flex-direction:column;gap:3px}
+.stats b{font-family:var(--f-b);font-size:1.08rem;letter-spacing:.01em}
+.stats span{font-size:.84rem}
+.plans{background:var(--bg)}
+.pg{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.plan{border-radius:16px;padding:26px 22px;box-shadow:0 8px 24px #002a640c}
+.plan.top{transform:none;border:2px solid var(--or-strong);box-shadow:0 10px 28px #002a6414}
+.plan.top:hover{transform:translateY(-2px)}
+.plan.top .ribbon{top:14px;right:14px;left:auto;transform:none;font-size:.68rem;letter-spacing:.035em;padding:5px 10px}
+.plan.top{padding-top:48px}
+.proof{background:var(--bg)}
+.proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.proof-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:0 8px 24px #002a640c}
+.proof-icon{display:grid;place-items:center;width:42px;height:42px;margin-bottom:16px;border-radius:12px;background:#c04e0014;color:#b84b00;font-size:.82rem;font-weight:700}
+.proof-card h3{margin:0 0 8px;font-family:var(--f-b);font-size:1.08rem;color:var(--navy)}
+.proof-card p{margin:0;color:var(--mut);font-size:.91rem}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .proof-card h3{color:#fff}}
+:root[data-theme="dark"] .proof-card h3{color:#fff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){.save,.chips.pub span{color:#73e0a0;background:#0f6b3c40}.proof-icon{color:#ffc178;background:#c04e0040}}}
+:root[data-theme="dark"] .save,:root[data-theme="dark"] .chips.pub span{color:#73e0a0;background:#0f6b3c40}
+:root[data-theme="dark"] .proof-icon{color:#ffc178;background:#c04e0040}
+.cta{padding:58px 0 70px}
+.cta-actions{justify-content:center}
+.cta .btn-outline{background:transparent;border:1px solid #ffffff80;color:#fff}
+.fab{right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));animation:none!important;box-shadow:0 8px 22px #00132c44}
+.cb{left:auto;right:18px;bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+.plan.top .btn,.hero,.hero img,.mq-t,.o1,.o2,.o3,.rv,.fab{animation:none!important}
+@media(max-width:900px){.pg{grid-template-columns:repeat(2,minmax(0,1fr))}.plan:last-child{grid-column:1/-1;max-width:calc(50% - 10px);width:100%;justify-self:center}}
+@media(max-width:680px){
+ .hero{padding:42px 0 30px}
+ .hero-layout{grid-template-columns:1fr;gap:22px;text-align:center}
+ .hero img{width:148px}
+ .hero-copy{margin:auto}
+ .hero-copy .tag{margin-bottom:14px}
+ .hero h1{font-size:clamp(2rem,8vw,2.65rem);margin-left:auto;margin-right:auto}
+ .hero-copy p{font-size:.98rem;margin-left:auto;margin-right:auto}
+ .hero-actions{justify-content:center}
+ .hero-actions .btn{width:100%;max-width:340px}
+ .stats{grid-template-columns:1fr;gap:0;margin-top:28px;padding-top:12px}
+ .stats>div{flex-direction:row;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #ffffff24}
+ .stats b{font-size:.96rem}
+ .stats span{text-align:right;font-size:.8rem}
+ .proof-grid,.pg{grid-template-columns:1fr}
+ .plan:last-child{grid-column:auto;max-width:none}
+ .plan.top{padding-top:48px}
+ .cta-actions{flex-direction:column}
+ .cta-actions .btn{width:100%;max-width:340px}
+ .fab{right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));padding:11px 16px}
+ .cb{right:12px;bottom:calc(70px + env(safe-area-inset-bottom,0px));width:calc(100vw - 24px)}
+}
+/* Capa visual futurista: neón controlado, superficies profundas y retícula técnica */
+:root{--navy:#08152e;--navy2:#102d5e;--bg:#070d1b;--card:#0e1a32;--tx:#edf5ff;--mut:#adbed8;--line:#20395f;--cyan:#55e5ff;--or:#ff9a3d;--or2:#55e5ff;--or-strong:#c04e00;color-scheme:dark}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--navy:#08152e;--navy2:#102d5e;--bg:#070d1b;--card:#0e1a32;--tx:#edf5ff;--mut:#adbed8;--line:#20395f;--cyan:#55e5ff;--or:#ff9a3d;--or2:#55e5ff;--or-strong:#c04e00;color-scheme:dark}}
+:root[data-theme="dark"]{--navy:#08152e;--navy2:#102d5e;--bg:#070d1b;--card:#0e1a32;--tx:#edf5ff;--mut:#adbed8;--line:#20395f;--cyan:#55e5ff;--or:#ff9a3d;--or2:#55e5ff;--or-strong:#c04e00;color-scheme:dark}
+:root[data-theme="light"]{--navy:#002a64;--navy2:#0a3f8f;--bg:#f6f8fc;--card:#fff;--tx:#17233a;--mut:#5b6980;--line:#e1e7f0;--cyan:#087f9b;--or:#b84b00;--or2:#087f9b;--or-strong:#c04e00;color-scheme:light}
+body{background-color:var(--bg);background-image:radial-gradient(ellipse at 14% 8%,#123a641c,transparent 34%),radial-gradient(ellipse at 88% 36%,#0b5f9b12,transparent 32%);color:var(--tx)}
+.site-nav{background:#071225eF;border-bottom-color:#55e5ff38;box-shadow:0 8px 24px #02071366}
+.nav-mark{border:1px solid #ffcf9a;box-shadow:0 0 18px #ff8a1c55,0 0 36px #ff8a1c1f}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--cyan)}
+.nav-links a.nav-login{padding:8px 13px;border:1px solid #55e5ff70;border-radius:999px;background:#55e5ff0d;color:#8beeff;font-weight:700}
+.nav-links a.nav-login:hover{border-color:var(--cyan);box-shadow:0 0 16px #55e5ff28}
+.hero{isolation:isolate;border-bottom:1px solid #55e5ff42;background:radial-gradient(ellipse at 83% 12%,#0b6fa733,transparent 36%),linear-gradient(125deg,#061127 0%,#0a1d3c 58%,#08152e 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#55e5ff0b 1px,transparent 1px),linear-gradient(90deg,#55e5ff0b 1px,transparent 1px),radial-gradient(circle at 72% 30%,#55e5ff12,transparent 32%);background-size:42px 42px,42px 42px,auto;mask-image:linear-gradient(to bottom,black,transparent 92%)}
+.hero-brand{position:relative;isolation:isolate}
+.hero-brand::before{content:"";position:absolute;z-index:-1;width:clamp(205px,24vw,280px);aspect-ratio:1;border:1px dashed #55e5ff70;border-radius:50%;box-shadow:0 0 44px #55e5ff18,inset 0 0 28px #55e5ff0d}
+.hero-brand::after{content:"";position:absolute;z-index:2;right:8%;top:20%;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 16px var(--cyan)}
+.hero img{border:4px solid #fff;box-shadow:0 0 0 1px #55e5ff,0 0 22px #55e5ff55,0 16px 42px #02071380}
+.hero h1{color:#f4f8ff;text-shadow:0 0 32px #55e5ff18}
+.hero h1 em{color:#8beeff;text-shadow:0 0 22px #55e5ff66}
+.hero-copy .tag{border:1px solid #ffc17b;box-shadow:0 0 22px #f96c002e}
+.hero .btn:not(.ghost),.cta .btn:not(.btn-outline){box-shadow:0 0 22px #ff8a1c35,0 7px 22px #02071366}
+.hero .btn.ghost,.cta .btn-outline{border-color:#55e5ff70;box-shadow:inset 0 0 18px #55e5ff0a}
+.hero .btn.ghost:hover,.cta .btn-outline:hover{border-color:var(--cyan);box-shadow:0 0 20px #55e5ff2b}
+.stats{border-top-color:#55e5ff38}
+.stats>div{padding:10px 14px;border:1px solid #55e5ff21;border-radius:12px;background:#07122561;box-shadow:inset 0 0 24px #55e5ff08}
+.stats b{color:#fff;text-shadow:0 0 14px #55e5ff32}
+.kick{color:var(--or);display:flex;align-items:center;gap:9px}
+.kick::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+h2,.step h3,.plan h3,.proof-card h3,.aviso h3,.price{color:var(--tx)}
+.sub,.step p,.row p,.proof-card p,.faq details p{color:var(--mut)}
+.step,.plan,.proof-card,.row,details{background:linear-gradient(145deg,#0e1b35ed,#0a1429f5);border-color:#243e65;box-shadow:0 14px 34px #02071340,inset 0 1px #ffffff08}
+.step{border-top:1px solid #243e65;border-left:3px solid #55e5ff}
+.step:hover,.plan:hover,.row:hover{border-color:#55e5ff88;box-shadow:0 0 0 1px #55e5ff20,0 18px 40px #02071366}
+.step .n{background:#0c2344;border-color:#55e5ff70;box-shadow:0 0 16px #55e5ff24}
+.step .ic{display:inline-grid;place-items:center;min-width:44px;min-height:44px;border:1px solid #55e5ff35;border-radius:12px;background:#55e5ff0c}
+.plan.top{background:linear-gradient(145deg,#10284a,#0b1830);border-color:#55e5ff;box-shadow:0 0 0 1px #55e5ff24,0 0 32px #55e5ff17,0 16px 36px #02071355}
+.plan.top .ribbon{border:1px solid #ffcf9a;box-shadow:0 0 18px #f96c003c}
+.price{color:#8beeff;text-shadow:0 0 18px #55e5ff32}
+.ph,.pr{color:var(--or)}
+.save,.chips.pub span{color:#73e0a0;background:#0f6b3c40}
+.proof-icon{color:#8beeff;background:#55e5ff12;border:1px solid #55e5ff4d;box-shadow:0 0 18px #55e5ff15}
+.faq{background:transparent}
+.faq details{border-radius:14px}
+.faq summary::after{color:var(--cyan);text-shadow:0 0 12px #55e5ff65}
+.row.pk{border-color:#55e5ff8c;background:linear-gradient(110deg,#55e5ff12,#0b1830)}
+.g{background:linear-gradient(135deg,#102d5e,#071225);border:1px solid #55e5ff45;box-shadow:0 0 30px #55e5ff12}
+.cta{position:relative;isolation:isolate;overflow:hidden;border-top:1px solid #55e5ff42;background:radial-gradient(ellipse at 50% 0%,#105a8a4d,transparent 54%),linear-gradient(135deg,#08152e,#061127)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#55e5ff0a 1px,transparent 1px),linear-gradient(90deg,#55e5ff0a 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(ellipse at center,black,transparent 78%)}
+.cta .w{position:relative;z-index:1}
+.fab{border:1px solid #b2ffd0;box-shadow:0 0 20px #25d36635,0 8px 24px #02071366}
+.cb{border-color:#55e5ff70;box-shadow:0 0 0 1px #55e5ff1f,0 16px 50px #02071399}
+.cbh{background:linear-gradient(125deg,#08152e,#0c3c67);border-bottom:1px solid #55e5ff50}
+.cbf button{box-shadow:0 0 16px #ff8a1c35}
+.m.b{background:#0a162b;border-color:#243e65}
+.m.u{background:#b84b00;color:#fff}
+.cbc button{border-color:#55e5ff40;background:#55e5ff0d;color:#8beeff}
+footer{background:#050b17;border-top:1px solid #55e5ff25}
+footer a{color:#8beeff}
+::selection{background:#55e5ff40;color:#fff}
+:root[data-theme="light"] body{background-image:radial-gradient(ellipse at 14% 8%,#1a5bc410,transparent 34%),radial-gradient(ellipse at 88% 36%,#0b91a50d,transparent 32%)}
+:root[data-theme="light"] .step,:root[data-theme="light"] .plan,:root[data-theme="light"] .proof-card,:root[data-theme="light"] .row,:root[data-theme="light"] details{background:var(--card);box-shadow:0 12px 30px #002a6410}
+:root[data-theme="light"] .step h3,:root[data-theme="light"] .plan h3,:root[data-theme="light"] .proof-card h3,:root[data-theme="light"] .aviso h3{color:var(--navy)}
+:root[data-theme="light"] .price{color:var(--navy);text-shadow:none}
+:root[data-theme="light"] .save,:root[data-theme="light"] .chips.pub span{color:#087a3a;background:#e8f5ec}
+:root[data-theme="light"] .proof-icon{color:#00677f;background:#d9f6fb;border-color:#9be8f4;box-shadow:none}
+:root[data-theme="light"] .plan.top{background:linear-gradient(145deg,#fff,#f1f8ff)}
+:root[data-theme="light"] .stats>div{background:#07122561}
+@media(max-width:680px){.hero{padding-top:46px}.hero-brand::before{width:186px}.hero-brand::after{right:calc(50% - 82px);top:15%}.stats>div{background:#07122561}.proof-card{padding:20px}}
+@media(prefers-reduced-motion:reduce){.step,.plan,.row,details,.btn{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<nav class="site-nav" aria-label="Navegación principal"><div class="nav-inner">
+<a class="nav-brand" href="#inicio"><span class="nav-mark" aria-hidden="true">HL</span><span>HORIZONTE LABORAL</span></a>
+<div class="nav-links"><a href="#ruta">La ruta</a><a href="#planes">Planes</a><a href="#tarifario">Servicios y precios</a><a href="#preguntas">Preguntas frecuentes</a><a class="nav-login" href="login.html">Acceso usuarios</a></div>
+</div></nav>
+<header class="hero" id="inicio">
+<div class="w">
+<div class="hero-layout">
+<div class="hero-brand"><img src="logo.png" alt="Logo de Horizonte Laboral" width="160" height="160" decoding="async" fetchpriority="high"></div>
+<div class="hero-copy">
+<span class="tag">Promoción hasta el 31 de diciembre de 2026</span>
+<h1>Tu empleo ideal empieza con una <em>ruta estratégica</em></h1>
+<p>Una ruta de <b>7 fases</b> para fortalecer tu perfil, mejorar tu búsqueda y prepararte para entrevistas, con acompañamiento profesional.</p>
+<div class="hero-actions"><a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Quiero%20orientaci%C3%B3n%20sobre%20la%20ruta%20de%20empleabilidad." target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a><a class="btn ghost" href="#planes">Ver planes y precios</a></div>
+</div>
+</div>
+<div class="stats"><div><b>3+ meses</b><span>de acompañamiento en 7 fases</span></div><div><b>10+</b><span>bolsas de empleo</span></div><div><b>PDF + Word</b><span>entregables editables</span></div></div>
+</div>
+</header>
+<main id="contenido">
+<section id="ruta"><div class="w">
+<div class="kick">Nuestra metodología</div>
+<h2>Ruta estratégica de empleabilidad</h2>
+<p class="sub">Cada fase construye sobre la anterior para que tu perfil llegue a las vacantes correctas y se destaque ante los reclutadores.</p>
+<div class="steps">
+<div class="step"><div class="n">1</div><div class="ic">📄</div><h3>Hoja de vida</h3><p>Diseñamos o mejoramos tu hoja de vida con criterios profesionales de selección: atractiva, organizada y competitiva.</p></div>
+<div class="step"><div class="n">2</div><div class="ic">🔎</div><h3>Diagnóstico y perfilamiento</h3><p>Identificamos tus fortalezas y definimos los cargos, sectores y áreas donde tienes más oportunidades.</p></div>
+<div class="step"><div class="n">3</div><div class="ic">💼</div><h3>LinkedIn y perfil profesional</h3><p>Fortalecemos tu marca personal: titular, descripción, experiencia y palabras clave para ser visible ante empresas.</p></div>
+<div class="step"><div class="n">4</div><div class="ic">🎯</div><h3>Búsqueda estratégica</h3><p>No cualquier empleo: vacantes afines a tu formación, experiencia y aspiración salarial.</p></div>
+<div class="step"><div class="n">5</div><div class="ic">📨</div><h3>Gestión y postulación</h3><p>Verificamos requisitos y gestionamos tus postulaciones, siempre con tu autorización.
+</p><div class="pl"><b>🏛️ Plataformas públicas</b><div class="chips pub"><span>Servicio Público de Empleo</span><span>SENA APE</span><span>Bogotá Trabaja</span></div><b>🏢 Plataformas privadas</b><div class="chips"><span>Compensar</span><span>CAFAM</span><span>Colsubsidio</span><span>Computrabajo</span><span>El Empleo</span><span>LinkedIn Jobs</span><span>Magneto Empleos</span><span>Indeed</span></div></div></div>
+<div class="step"><div class="n">6</div><div class="ic">🎤</div><h3>Preparación para entrevistas</h3><p>Entrevistas individuales, grupales y virtuales: preguntas probables, respuestas estratégicas y seguridad al hablar.</p></div>
+<div class="step"><div class="n">7</div><div class="ic">🤝</div><h3>Acompañamiento y orientación</h3><p>Te ayudamos a interpretar respuestas de los procesos y a mejorar tu estrategia para las próximas convocatorias.</p></div>
+</div></div></section>
+
+<section style="padding:0 0 44px"><div class="w">
+<h2 class="sr-only">Información importante</h2>
+<div class="aviso"><div class="ai">⏳</div><div><h3>Un proceso serio toma su tiempo</h3><p>Las 7 fases se desarrollan en un <b>tiempo mínimo de tres (3) meses o más</b>, porque cada fase se hace con todo el perfilamiento y la dedicación que tu perfil merece. Los resultados de calidad no se improvisan.</p></div></div>
+<div class="aviso"><div class="ai">💳</div><div><h3>Plataformas de empleo: acelera tu proceso</h3><p>En las plataformas de empleo privadas recomendamos activar <b>suscripciones mensuales</b> (planes pagos o premium), porque ayudan a acelerar el proceso de selección y a darte mayor visibilidad ante los reclutadores. Este valor se paga directamente a cada plataforma y es independiente de nuestros servicios. Las plataformas públicas son de acceso gratuito.</p></div></div>
+</div></section>
+
+<section class="plans" id="planes"><div class="w">
+<div class="kick">Precios de lanzamiento</div>
+<h2>Elige tu ruta y arranca este trimestre</h2>
+<p class="sub">Paquetes con precio especial frente a contratar cada servicio por separado. Promoción válida hasta el <b>31 de diciembre de 2026</b>.</p>
+<div class="pg">
+<div class="plan"><h3>Plan Arranque</h3><div class="ph">Fases 1 y 2</div>
+<div class="old">Valor individual $90.000</div><div class="price">$69.900</div><span class="save">Ahorras $20.100</span>
+<ul><li>Hoja de vida profesional</li><li>Optimización para sistemas ATS</li><li>Carta de presentación laboral</li><li>Portafolio de anexos organizado</li><li>Diagnóstico de empleabilidad</li></ul>
+<a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Plan%20Arranque%20%28%2469.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero este plan</a></div>
+
+<div class="plan top"><span class="ribbon">⭐ MÁS ELEGIDO</span><h3>Plan Impulso</h3><div class="ph">Fases 1 a 5</div>
+<div class="old">Valor individual $265.000</div><div class="price">$189.900</div><span class="save">Ahorras $75.100</span>
+<ul><li>Todo el Plan Arranque</li><li>Configuración de perfil en LinkedIn</li><li>Plan personalizado de búsqueda de empleo</li><li>Paquete Plataformas de Empleo 360</li><li>Alertas y acompañamiento en postulaciones</li></ul>
+<a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Plan%20Impulso%20%28%24189.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero este plan</a></div>
+
+<div class="plan"><h3>Ruta Completa 360</h3><div class="ph">Las 7 fases · mínimo 3 meses</div>
+<div class="old">Valor individual $530.000</div><div class="price">$349.900</div><span class="save">Ahorras $180.100</span>
+<ul><li>Todo el Plan Impulso</li><li>Paquete Perfil Profesional 360 (marca personal, portafolio y tarjeta digital)</li><li>Programa Preparación Laboral 360 (simulación de entrevista y pruebas)</li><li>Acompañamiento y orientación de principio a fin</li></ul>
+<a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20Ruta%20Completa%20360%20%28%24349.900%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">Quiero la ruta completa</a></div>
+</div>
+<p class="note">🛡️ Todos los servicios incluyen acompañamiento, entrega en PDF y Word editables y garantía de revisión.</p>
+</div></section>
+
+<section class="proof" aria-labelledby="proof-title"><div class="w">
+<div class="kick">Un proceso claro y acompañado</div>
+<h2 id="proof-title">Compromisos desde el primer día</h2>
+<p class="sub">Conoce qué puedes esperar al trabajar con Horizonte Laboral.</p>
+<div class="proof-grid">
+<article class="proof-card"><span class="proof-icon" aria-hidden="true">01</span><h3>Ruta por fases</h3><p>Un proceso estructurado en siete fases, con acompañamiento y orientación durante la búsqueda.</p></article>
+<article class="proof-card"><span class="proof-icon" aria-hidden="true">02</span><h3>Entregables editables</h3><p>Recibe tus documentos en PDF y Word para consultarlos y editarlos con facilidad.</p></article>
+<article class="proof-card"><span class="proof-icon" aria-hidden="true">03</span><h3>Postulaciones autorizadas</h3><p>Verificamos requisitos y gestionamos postulaciones siempre con tu autorización.</p></article>
+</div>
+</div></section>
+
+<section id="tarifario"><div class="w">
+<div class="kick">Tarifario oficial 2026</div>
+<h2>Todos nuestros servicios y precios</h2>
+<p class="sub">Precios fijos en pesos colombianos (COP). Elige una línea o busca un servicio por nombre.</p>
+<label class="sr-only" for="q">Buscar un servicio en el tarifario</label>
+<input id="q" class="srch" type="search" placeholder="🔎 Buscar servicio… (ej: LinkedIn, ATS, entrevista)">
+<div class="tabs" role="tablist" aria-label="Categorías de servicios"><button class="tab on" id="tab-btn-0" role="tab" aria-selected="true" aria-controls="tab-0" data-t="0">🚀 Impulso Laboral 360</button><button class="tab" id="tab-btn-1" role="tab" aria-selected="false" aria-controls="tab-1" data-t="1">👔 Preparación Laboral 360</button><button class="tab" id="tab-btn-2" role="tab" aria-selected="false" aria-controls="tab-2" data-t="2">💼 Plataformas de Empleo</button><button class="tab" id="tab-btn-3" role="tab" aria-selected="false" aria-controls="tab-3" data-t="3">👤 Perfil Profesional 360</button></div>
+<div class="tp on" id="tab-0" role="tabpanel" aria-labelledby="tab-btn-0" data-t="0">
+<div class="row"><div><h3>Elaboración de hoja de vida básica</h3><p>Diseño y elaboración de una hoja de vida clara, organizada y profesional con la información esencial para procesos de selección y postulaciones laborales.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Elaboración de hoja de vida profesional</h3><p>Creación de una hoja de vida con estructura profesional, diseño moderno y contenido optimizado para destacar las competencias, logros y experiencia del candidato.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Actualización y Rediseño de Hoja de Vida</h3><p>Actualización de información, experiencia laboral, estudios, cursos, competencias y mejora del diseño para mantener el documento vigente.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Optimización para Sistemas ATS</h3><p>Adaptamos tu hoja de vida para que supere los filtros automatizados de los Applicant Tracking Systems (ATS) utilizados por empresas y plataformas de empleo.</p></div><div class="pr">$40.000</div></div>
+<div class="row"><div><h3>Hoja de Vida para Primer Empleo</h3><p>Diseño y redacción de una hoja de vida enfocada en jóvenes o personas sin experiencia laboral previa. Resalta habilidades blandas, formación académica y potencial profesional.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Hoja de Vida para Convocatorias Públicas</h3><p>Elaboración de hoja de vida conforme a los requisitos de entidades estatales y convocatorias públicas. Incluye estructura formal y lenguaje técnico.</p></div><div class="pr">$35.000</div></div>
+<div class="row"><div><h3>Hoja de Vida Optimizada para un Cargo Específico</h3><p>Adaptación del CV a perfiles administrativos, técnicos o ejecutivos.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Carta de presentación laboral</h3><p>Redacción personalizada de una carta de presentación que fortalece la candidatura y complementa la hoja de vida durante el proceso de postulación.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Carta de Motivación</h3><p>Elaboración de una carta orientada a explicar el interés, compromiso y motivación del candidato para procesos laborales, académicos o de formación.</p></div><div class="pr">$25.000</div></div>
+<div class="row"><div><h3>Elaboración de perfil profesional resumido</h3><p>Síntesis de competencias para redes o presentaciones.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Diseño de portafolio profesional</h3><p>Documento visual con logros y proyectos destacados.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Portafolio de Anexos</h3><p>Creación de una carpeta digital organizada con todos los documentos laborales, lista para compartir en procesos de selección o convocatorias.</p></div><div class="pr">$45.000</div></div>
+<div class="row"><div><h3>Actualización de perfil en plataformas de empleo</h3><p>Actualización, organización y optimización de perfiles en plataformas como LinkedIn, Computrabajo, Magneto, El Empleo, Indeed y otras.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Diagnóstico de Empleabilidad</h3><p>Evaluación del perfil del candidato para identificar fortalezas, oportunidades de mejora y recomendaciones para incrementar sus posibilidades de contratación.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Plan personalizado de Búsqueda de Empleo</h3><p>Diseño de una estrategia de búsqueda laboral con recomendaciones sobre plataformas, tipo de vacantes, frecuencia de postulación y organización del proceso.</p></div><div class="pr">$50.000</div></div>
+<div class="row pk"><div><h3>Paquete Integral de Empleabilidad</h3><p>Servicio completo que incluye hoja de vida profesional, optimización ATS, carta de presentación, organización de anexos y diagnóstico de empleabilidad.</p></div><div class="pr">$90.000</div></div>
+</div>
+<div class="tp" id="tab-1" role="tabpanel" aria-labelledby="tab-btn-1" data-t="1" hidden>
+<div class="row"><div><h3>Taller para entrevista laboral</h3><p>Sesión personalizada para preparar al candidato antes de una entrevista, con recomendaciones sobre actitud, comunicación, presentación personal y manejo de preguntas frecuentes.</p></div><div class="pr">$50.000</div></div>
+<div class="row"><div><h3>Taller simulación entrevista laboral</h3><p>Práctica guiada mediante una entrevista simulada con retroalimentación profesional para fortalecer la confianza y mejorar el desempeño del candidato.</p></div><div class="pr">$50.000</div></div>
+<div class="row"><div><h3>Taller preparación para entrevistas virtuales</h3><p>Asesoría para afrontar entrevistas por videollamada, incluyendo aspectos técnicos, comunicación, imagen, iluminación y comportamiento profesional.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Taller preparación para pruebas psicotécnicas</h3><p>Orientación sobre los diferentes tipos de pruebas psicotécnicas, su funcionamiento y estrategias para responderlas con mayor seguridad.</p></div><div class="pr">$35.000</div></div>
+<div class="row"><div><h3>Taller preparación para pruebas de conocimiento</h3><p>Asesoría para afrontar evaluaciones técnicas o de conocimientos requeridas en procesos de selección de diferentes sectores.</p></div><div class="pr">$60.000</div></div>
+<div class="row pk"><div><h3>Programa Preparación Laboral 360</h3><p>Taller integral que incluye elaboración de perfil, simulación de entrevista, preparación para pruebas y creación de perfil en portales de empleabilidad.</p></div><div class="pr">$150.000</div></div>
+</div>
+<div class="tp" id="tab-2" role="tabpanel" aria-labelledby="tab-btn-2" data-t="2" hidden>
+<div class="row"><div><h3>Registro en Plataformas de Empleo</h3><p>Creación y configuración inicial del perfil en las principales plataformas de empleo para facilitar la búsqueda de oportunidades laborales.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Actualización de Perfiles en Plataformas de Empleo</h3><p>Actualización de la información personal, experiencia laboral, estudios, habilidades y demás datos del perfil para mantenerlo vigente y competitivo.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Optimización de Perfiles en Plataformas de Empleo</h3><p>Optimización estratégica del perfil mediante palabras clave, competencias y mejoras en la información para incrementar la visibilidad ante reclutadores.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Configuración de Perfil en LinkedIn</h3><p>Creación y configuración profesional del perfil en LinkedIn para fortalecer la presencia laboral.</p></div><div class="pr">$35.000</div></div>
+<div class="row"><div><h3>Optimización de Perfil en LinkedIn</h3><p>Actualización y mejora del perfil de LinkedIn para aumentar su posicionamiento en las búsquedas de reclutadores y empresas.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Registro y Configuración en Computrabajo</h3><p>Creación o actualización del perfil en Computrabajo con información organizada y optimizada para facilitar la postulación a ofertas laborales.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Registro y Configuración en El Empleo</h3><p>Creación y optimización del perfil en El Empleo, asegurando una presentación adecuada de la experiencia y competencias.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Registro y Configuración en Indeed</h3><p>Creación o actualización del perfil en Indeed con información organizada para ampliar las oportunidades laborales nacionales e internacionales.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Acompañamiento en Postulación a Vacantes</h3><p>Asesoría durante el proceso de postulación a ofertas laborales, verificando el cumplimiento de requisitos y la correcta presentación del perfil.</p></div><div class="pr">$30.000</div></div>
+<div class="row"><div><h3>Taller uso de plataformas de empleo</h3><p>Taller para aprender a utilizar correctamente los principales portales de empleo, mejorar las postulaciones y aprovechar sus herramientas.</p></div><div class="pr">$35.000</div></div>
+<div class="row pk"><div><h3>Paquete Plataformas de Empleo 360</h3><p>Servicio integral que incluye la creación u optimización de perfiles en las principales plataformas de empleo, configuración de alertas, estrategia de búsqueda y acompañamiento en postulaciones.</p></div><div class="pr">$90.000</div></div>
+</div>
+<div class="tp" id="tab-3" role="tabpanel" aria-labelledby="tab-btn-3" data-t="3" hidden>
+<div class="row"><div><h3>Elaboración de Perfil Profesional</h3><p>Redacción de un perfil profesional claro, estratégico y orientado a destacar competencias, experiencia, fortalezas y objetivos para diferentes escenarios laborales o comerciales.</p></div><div class="pr">$20.000</div></div>
+<div class="row"><div><h3>Optimización de Perfil Profesional</h3><p>Revisión y mejora del perfil profesional existente, fortaleciendo su estructura, redacción e impacto para proyectar una imagen más competitiva.</p></div><div class="pr">$25.000</div></div>
+<div class="row"><div><h3>Creación y/o Optimización de perfil para LinkedIn</h3><p>Diseño y configuración profesional del perfil de LinkedIn, incluyendo fotografía sugerida, titular, extracto, experiencia, habilidades y recomendaciones.</p></div><div class="pr">$35.000</div></div>
+<div class="row"><div><h3>Marca personal profesional</h3><p>Taller para definir una identidad profesional coherente, fortaleciendo la imagen personal y la forma en que el cliente se presenta en medios digitales y presenciales.</p></div><div class="pr">$40.000</div></div>
+<div class="row"><div><h3>Portafolio Profesional</h3><p>Diseño de un portafolio profesional que reúna experiencia, logros, proyectos, certificaciones y fortalezas de manera organizada y atractiva.</p></div><div class="pr">$50.000</div></div>
+<div class="row"><div><h3>Portafolio digital</h3><p>Diseño de un portafolio digital en formato PDF interactivo o plataforma en línea para compartir fácilmente con clientes, empresas o instituciones.</p></div><div class="pr">$60.000</div></div>
+<div class="row"><div><h3>Tarjeta de Presentación digital</h3><p>Diseño de una tarjeta de presentación digital con información de contacto, código QR y enlaces a redes sociales o portafolio.</p></div><div class="pr">$25.000</div></div>
+<div class="row pk"><div><h3>Paquete Perfil Profesional 360</h3><p>Solución integral que incluye perfil profesional, optimización de LinkedIn, portafolio profesional, tarjeta digital y taller en marca personal.</p></div><div class="pr">$150.000</div></div>
+</div>
+<p class="note" id="nores" role="status" aria-live="polite" hidden>No encontramos ese servicio. Escríbenos y te ayudamos a cotizarlo.</p>
+<div class="g" style="margin-top:28px"><h3>🌟 Nuestro compromiso contigo</h3><p>No nos limitamos a elaborar una hoja de vida: fortalecemos tu perfil, tu posicionamiento, la búsqueda de oportunidades y la gestión de tus postulaciones. Tu talento merece oportunidades y queremos ayudarte a encontrarlas.</p></div>
+</div></section>
+
+<section class="faq" id="preguntas"><div class="w">
+<div class="kick">Resolvemos tus dudas</div>
+<h2>Preguntas frecuentes</h2>
+<p class="sub">Información clara para que elijas la ruta que mejor se ajusta a tu momento profesional.</p>
+<div class="faq-list">
+<details><summary>¿Cuánto tiempo toma la ruta completa?</summary><p>Las siete fases se desarrollan en un tiempo mínimo de tres meses o más, según el perfil y el acompañamiento requerido.</p></details>
+<details><summary>¿Qué recibo al contratar un servicio?</summary><p>Los servicios incluyen acompañamiento y entregables en PDF y Word editables, además de garantía de revisión.</p></details>
+<details><summary>¿Las suscripciones de las plataformas están incluidas?</summary><p>No. Las suscripciones de plataformas privadas se pagan directamente a cada plataforma y son independientes del valor de nuestros servicios. Las plataformas públicas son gratuitas.</p></details>
+<details><summary>¿Puedo contratar un servicio individual?</summary><p>Sí. Consulta el tarifario por categoría o busca el servicio que necesitas. Si tienes dudas, un asesor puede orientarte por WhatsApp.</p></details>
+<details><summary>¿Cómo comienzo?</summary><p>Escríbenos por WhatsApp para contarnos tu situación y recibir orientación sobre el servicio o plan más adecuado.</p></details>
+</div></div></section>
+</main>
+
+<section class="cta"><div class="w">
+<h2>Da el siguiente paso en tu búsqueda laboral</h2>
+<p>Cuéntanos tu situación y te orientamos sobre el servicio o la ruta que mejor se ajusta a tus objetivos.</p>
+<div class="cta-actions"><a class="btn" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20informaci%C3%B3n%20sobre%20la%20Ruta%20de%20Empleabilidad.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">💬 Hablar con un asesor</a><button class="btn btn-outline" id="cbl" type="button" aria-controls="cb" aria-expanded="false">🤖 Consultar al asistente</button></div>
+</div></section>
+
+<footer><div class="footer-inner"><strong>Horizonte Laboral</strong><span>Conectando talento con oportunidades · Servicios digitales en toda Colombia</span><span>Precios en pesos colombianos (COP). Promoción sujeta a disponibilidad de cupos.</span><a href="login.html">Acceso para usuarios y administradores</a><a href="https://wa.me/573209786265" target="_blank" rel="noopener noreferrer">Contáctanos por WhatsApp</a><small>© 2026 Horizonte Laboral. Todos los derechos reservados.</small></div></footer>
+
+<div class="cb" id="cb" role="dialog" aria-label="Asistente virtual de Horizonte Laboral" aria-modal="false">
+<div class="cbh"><div>Asistente Horizonte Laboral<small>Respuestas automáticas · un asesor te atiende por WhatsApp</small></div><button id="cbx" aria-label="Cerrar">×</button></div>
+<div class="cbm" id="cbm"></div><div class="cbc" id="cbc"></div>
+<form class="cbf" id="cbf"><label class="sr-only" for="cbi">Escribe tu pregunta</label><input id="cbi" type="text" placeholder="Escribe tu pregunta…" autocomplete="off"><button type="submit">Enviar</button></form>
+</div>
+<a class="fab" href="https://wa.me/573209786265?text=Hola%20Horizonte%20Laboral%20%F0%9F%91%8B%20Me%20interesa%20informaci%C3%B3n%20sobre%20la%20Ruta%20de%20Empleabilidad.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬 WhatsApp</a>
+
+<script>
+var WHATSAPP = "573209786265";
+function wa(plan){
+  var t = "Hola Horizonte Laboral 👋 Me interesa " + plan + ". ¿Me pueden dar más información?";
+  return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(t);
+}
+var SV=[{"n": "Elaboración de hoja de vida básica", "d": "Diseño y elaboración de una hoja de vida clara, organizada y profesional con la información esencial para procesos de selección y postulaciones laborales.", "p": "$30.000", "m": "Impulso Laboral 360"}, {"n": "Elaboración de hoja de vida profesional", "d": "Creación de una hoja de vida con estructura profesional, diseño moderno y contenido optimizado para destacar las competencias, logros y experiencia del candidato.", "p": "$30.000", "m": "Impulso Laboral 360"}, {"n": "Actualización y Rediseño de Hoja de Vida", "d": "Actualización de información, experiencia laboral, estudios, cursos, competencias y mejora del diseño para mantener el documento vigente.", "p": "$30.000", "m": "Impulso Laboral 360"}, {"n": "Optimización para Sistemas ATS", "d": "Adaptamos tu hoja de vida para que supere los filtros automatizados de los Applicant Tracking Systems (ATS) utilizados por empresas y plataformas de empleo.", "p": "$40.000", "m": "Impulso Laboral 360"}, {"n": "Hoja de Vida para Primer Empleo", "d": "Diseño y redacción de una hoja de vida enfocada en jóvenes o personas sin experiencia laboral previa. Resalta habilidades blandas, formación académica y potencial profesional.", "p": "$30.000", "m": "Impulso Laboral 360"}, {"n": "Hoja de Vida para Convocatorias Públicas", "d": "Elaboración de hoja de vida conforme a los requisitos de entidades estatales y convocatorias públicas. Incluye estructura formal y lenguaje técnico.", "p": "$35.000", "m": "Impulso Laboral 360"}, {"n": "Hoja de Vida Optimizada para un Cargo Específico", "d": "Adaptación del CV a perfiles administrativos, técnicos o ejecutivos.", "p": "$30.000", "m": "Impulso Laboral 360"}, {"n": "Carta de presentación laboral", "d": "Redacción personalizada de una carta de presentación que fortalece la candidatura y complementa la hoja de vida durante el proceso de postulación.", "p": "$20.000", "m": "Impulso Laboral 360"}, {"n": "Carta de Motivación", "d": "Elaboración de una carta orientada a explicar el interés, compromiso y motivación del candidato para procesos laborales, académicos o de formación.", "p": "$25.000", "m": "Impulso Laboral 360"}, {"n": "Elaboración de perfil profesional resumido", "d": "Síntesis de competencias para redes o presentaciones.", "p": "$20.000", "m": "Impulso Laboral 360"}, {"n": "Diseño de portafolio profesional", "d": "Documento visual con logros y proyectos destacados.", "p": "$30.000", "m": "Impulso Laboral 360"}, {"n": "Portafolio de Anexos", "d": "Creación de una carpeta digital organizada con todos los documentos laborales, lista para compartir en procesos de selección o convocatorias.", "p": "$45.000", "m": "Impulso Laboral 360"}, {"n": "Actualización de perfil en plataformas de empleo", "d": "Actualización, organización y optimización de perfiles en plataformas como LinkedIn, Computrabajo, Magneto, El Empleo, Indeed y otras.", "p": "$20.000", "m": "Impulso Laboral 360"}, {"n": "Diagnóstico de Empleabilidad", "d": "Evaluación del perfil del candidato para identificar fortalezas, oportunidades de mejora y recomendaciones para incrementar sus posibilidades de contratación.", "p": "$30.000", "m": "Impulso Laboral 360"}, {"n": "Plan personalizado de Búsqueda de Empleo", "d": "Diseño de una estrategia de búsqueda laboral con recomendaciones sobre plataformas, tipo de vacantes, frecuencia de postulación y organización del proceso.", "p": "$50.000", "m": "Impulso Laboral 360"}, {"n": "Paquete Integral de Empleabilidad", "d": "Servicio completo que incluye hoja de vida profesional, optimización ATS, carta de presentación, organización de anexos y diagnóstico de empleabilidad.", "p": "$90.000", "m": "Impulso Laboral 360"}, {"n": "Taller para entrevista laboral", "d": "Sesión personalizada para preparar al candidato antes de una entrevista, con recomendaciones sobre actitud, comunicación, presentación personal y manejo de preguntas frecuentes.", "p": "$50.000", "m": "Preparación Laboral 360"}, {"n": "Taller simulación entrevista laboral", "d": "Práctica guiada mediante una entrevista simulada con retroalimentación profesional para fortalecer la confianza y mejorar el desempeño del candidato.", "p": "$50.000", "m": "Preparación Laboral 360"}, {"n": "Taller preparación para entrevistas virtuales", "d": "Asesoría para afrontar entrevistas por videollamada, incluyendo aspectos técnicos, comunicación, imagen, iluminación y comportamiento profesional.", "p": "$30.000", "m": "Preparación Laboral 360"}, {"n": "Taller preparación para pruebas psicotécnicas", "d": "Orientación sobre los diferentes tipos de pruebas psicotécnicas, su funcionamiento y estrategias para responderlas con mayor seguridad.", "p": "$35.000", "m": "Preparación Laboral 360"}, {"n": "Taller preparación para pruebas de conocimiento", "d": "Asesoría para afrontar evaluaciones técnicas o de conocimientos requeridas en procesos de selección de diferentes sectores.", "p": "$60.000", "m": "Preparación Laboral 360"}, {"n": "Programa Preparación Laboral 360", "d": "Taller integral que incluye elaboración de perfil, simulación de entrevista, preparación para pruebas y creación de perfil en portales de empleabilidad.", "p": "$150.000", "m": "Preparación Laboral 360"}, {"n": "Registro en Plataformas de Empleo", "d": "Creación y configuración inicial del perfil en las principales plataformas de empleo para facilitar la búsqueda de oportunidades laborales.", "p": "$20.000", "m": "Plataformas de Empleo"}, {"n": "Actualización de Perfiles en Plataformas de Empleo", "d": "Actualización de la información personal, experiencia laboral, estudios, habilidades y demás datos del perfil para mantenerlo vigente y competitivo.", "p": "$20.000", "m": "Plataformas de Empleo"}, {"n": "Optimización de Perfiles en Plataformas de Empleo", "d": "Optimización estratégica del perfil mediante palabras clave, competencias y mejoras en la información para incrementar la visibilidad ante reclutadores.", "p": "$30.000", "m": "Plataformas de Empleo"}, {"n": "Configuración de Perfil en LinkedIn", "d": "Creación y configuración profesional del perfil en LinkedIn para fortalecer la presencia laboral.", "p": "$35.000", "m": "Plataformas de Empleo"}, {"n": "Optimización de Perfil en LinkedIn", "d": "Actualización y mejora del perfil de LinkedIn para aumentar su posicionamiento en las búsquedas de reclutadores y empresas.", "p": "$30.000", "m": "Plataformas de Empleo"}, {"n": "Registro y Configuración en Computrabajo", "d": "Creación o actualización del perfil en Computrabajo con información organizada y optimizada para facilitar la postulación a ofertas laborales.", "p": "$20.000", "m": "Plataformas de Empleo"}, {"n": "Registro y Configuración en El Empleo", "d": "Creación y optimización del perfil en El Empleo, asegurando una presentación adecuada de la experiencia y competencias.", "p": "$20.000", "m": "Plataformas de Empleo"}, {"n": "Registro y Configuración en Indeed", "d": "Creación o actualización del perfil en Indeed con información organizada para ampliar las oportunidades laborales nacionales e internacionales.", "p": "$20.000", "m": "Plataformas de Empleo"}, {"n": "Acompañamiento en Postulación a Vacantes", "d": "Asesoría durante el proceso de postulación a ofertas laborales, verificando el cumplimiento de requisitos y la correcta presentación del perfil.", "p": "$30.000", "m": "Plataformas de Empleo"}, {"n": "Taller uso de plataformas de empleo", "d": "Taller para aprender a utilizar correctamente los principales portales de empleo, mejorar las postulaciones y aprovechar sus herramientas.", "p": "$35.000", "m": "Plataformas de Empleo"}, {"n": "Paquete Plataformas de Empleo 360", "d": "Servicio integral que incluye la creación u optimización de perfiles en las principales plataformas de empleo, configuración de alertas, estrategia de búsqueda y acompañamiento en postulaciones.", "p": "$90.000", "m": "Plataformas de Empleo"}, {"n": "Elaboración de Perfil Profesional", "d": "Redacción de un perfil profesional claro, estratégico y orientado a destacar competencias, experiencia, fortalezas y objetivos para diferentes escenarios laborales o comerciales.", "p": "$20.000", "m": "Perfil Profesional 360"}, {"n": "Optimización de Perfil Profesional", "d": "Revisión y mejora del perfil profesional existente, fortaleciendo su estructura, redacción e impacto para proyectar una imagen más competitiva.", "p": "$25.000", "m": "Perfil Profesional 360"}, {"n": "Creación y/o Optimización de perfil para LinkedIn", "d": "Diseño y configuración profesional del perfil de LinkedIn, incluyendo fotografía sugerida, titular, extracto, experiencia, habilidades y recomendaciones.", "p": "$35.000", "m": "Perfil Profesional 360"}, {"n": "Marca personal profesional", "d": "Taller para definir una identidad profesional coherente, fortaleciendo la imagen personal y la forma en que el cliente se presenta en medios digitales y presenciales.", "p": "$40.000", "m": "Perfil Profesional 360"}, {"n": "Portafolio Profesional", "d": "Diseño de un portafolio profesional que reúna experiencia, logros, proyectos, certificaciones y fortalezas de manera organizada y atractiva.", "p": "$50.000", "m": "Perfil Profesional 360"}, {"n": "Portafolio digital", "d": "Diseño de un portafolio digital en formato PDF interactivo o plataforma en línea para compartir fácilmente con clientes, empresas o instituciones.", "p": "$60.000", "m": "Perfil Profesional 360"}, {"n": "Tarjeta de Presentación digital", "d": "Diseño de una tarjeta de presentación digital con información de contacto, código QR y enlaces a redes sociales o portafolio.", "p": "$25.000", "m": "Perfil Profesional 360"}, {"n": "Paquete Perfil Profesional 360", "d": "Solución integral que incluye perfil profesional, optimización de LinkedIn, portafolio profesional, tarjeta digital y taller en marca personal.", "p": "$150.000", "m": "Perfil Profesional 360"}];
+function nz(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");}
+var STOP="para,como,cual,cuanto,cuesta,cuestan,precio,precios,valor,quiero,necesito,hola,tienen,tiene,hacen,sobre,informacion,servicio,servicios,una,uno,unos,las,los,del,que,con,por,mis,mas,hay,son,mi,me,de,la,el,en,un,y,o,a,es,se,si,al,lo,le,su".split(",");
+function find(q){
+  var t=nz(q.replace(/\bcv\b/gi,"hoja de vida")).split(/[^a-z0-9]+/).filter(function(w){return w.length>2&&STOP.indexOf(w)<0;});
+  if(!t.length)return [];
+  var r=SV.map(function(s){var n=nz(s.n),h=nz(s.n+" "+s.d),sc=0;
+    t.forEach(function(w){var st=w.length>6?w.slice(0,6):w;if(n.indexOf(st)>-1)sc+=3;else if(h.indexOf(st)>-1)sc+=1;});
+    return {s:s,sc:sc};}).filter(function(x){return x.sc>0;}).sort(function(a,b){return b.sc-a.sc;});
+  return r.slice(0,4).map(function(x){return x.s;});
+}
+var WAH=function(){return "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("Hola Horizonte Laboral 👋 Quisiera hablar con un asesor.");};
+var CH=["Ver las 7 fases","Planes y precios","¿Cuánto tiempo toma?","Plataformas de empleo","Hablar con un asesor"];
+var KB=[
+ [/^(hola|buenas|buenos|hey|saludos)/,"Hola 👋 Soy el asistente virtual de Horizonte Laboral. ¿Sobre qué quieres saber?"],
+ [/(asesor|humano|persona|whatsapp|contacto|hablar|llamar)/,function(){return "Con gusto. Un asesor te atiende por WhatsApp: <a href=\""+WAH()+"\" target=\"_blank\" rel=\"noopener noreferrer\">💬 Escribir a un asesor</a>";}],
+ [/(tiempo|dura|demora|tarda|meses|plazo)/,"Las 7 fases se desarrollan en un tiempo mínimo de <b>3 meses o más</b>, porque cada fase se hace con todo el perfilamiento y la dedicación que tu perfil merece."],
+ [/(suscrip|premium|mensualidad)/,"En las plataformas de empleo <b>privadas</b> recomendamos activar suscripciones mensuales para acelerar el proceso de selección. Se pagan directamente a cada plataforma y son independientes de nuestros servicios. Las plataformas públicas son gratuitas."],
+ [/(plataforma|bolsa|portal|publica|privada)/,"🏛️ <b>Públicas:</b> Servicio Público de Empleo, SENA APE y Bogotá Trabaja.<br>🏢 <b>Privadas:</b> Compensar, CAFAM, Colsubsidio, Computrabajo, El Empleo, LinkedIn Jobs, Magneto Empleos e Indeed."],
+ [/(fase|ruta|metodolog|pasos|como funciona|etapa)/,"Nuestra ruta tiene 7 fases:<br>1️⃣ Hoja de vida<br>2️⃣ Diagnóstico y perfilamiento<br>3️⃣ LinkedIn y perfil profesional<br>4️⃣ Búsqueda estratégica<br>5️⃣ Gestión y postulación<br>6️⃣ Preparación para entrevistas<br>7️⃣ Acompañamiento y orientación"],
+ [/(planes|promo|descuento|oferta|combo|paquetes|ruta completa|arranque|impulso)/,"Promoción hasta el 31 de diciembre de 2026:<div class=\"it\"><span>Plan Arranque (fases 1 y 2)</span><b>$69.900</b></div><div class=\"it\"><span>Plan Impulso (fases 1 a 5)</span><b>$189.900</b></div><div class=\"it\"><span>Ruta Completa 360 (7 fases)</span><b>$349.900</b></div>"],
+ [/(garantia|revision|editable|word|pdf)/,"Todos los servicios incluyen acompañamiento, entrega en PDF y Word editables y garantía de revisión. 🛡️"],
+ [/(pago|pagar|nequi|daviplata|transferencia|cuotas|medios de)/,function(){return "Los medios y condiciones de pago te los confirma un asesor según el servicio que elijas. <a href=\""+WAH()+"\" target=\"_blank\" rel=\"noopener noreferrer\">💬 Preguntar por WhatsApp</a>";}],
+ [/(tarifario|todos los precios|lista de)/,"Puedes ver todos los servicios y precios en la sección <a href=\"#tarifario\" onclick=\"closeCb()\">Tarifario</a> de esta página."]
+];
+function reply(q){
+  var n=nz(q);
+  for(var i=0;i<KB.length;i++){if(KB[i][0].test(n)){var a=KB[i][1];return typeof a==="function"?a():a;}}
+  var f=find(q);
+  if(f.length){return "Esto encontré en el tarifario:"+f.map(function(s){return "<div class=\"it\"><span>"+s.n+"</span><b>"+s.p+"</b></div>";}).join("")+"<br>¿Quieres contratarlo? <a href=\""+WAH()+"\" target=\"_blank\" rel=\"noopener noreferrer\">💬 Hablar con un asesor</a>";}
+  return "No tengo esa respuesta a la mano. 🤔 Un asesor puede ayudarte: <a href=\""+WAH()+"\" target=\"_blank\" rel=\"noopener noreferrer\">💬 Escribir por WhatsApp</a>";
+}
+var cb=document.getElementById("cb"),cbm=document.getElementById("cbm"),cbc=document.getElementById("cbc"),cbi=document.getElementById("cbi"),started=false;
+function add(cls,html,txt){var m=document.createElement("div");m.className="m "+cls;if(txt)m.textContent=txt;else m.innerHTML=html;cbm.appendChild(m);cbm.scrollTop=cbm.scrollHeight;return m;}
+function chips(){cbc.innerHTML="";CH.forEach(function(c){var b=document.createElement("button");b.type="button";b.textContent=c;b.onclick=function(){ask(c);};cbc.appendChild(b);});}
+function ask(q){
+  add("u","",q);cbc.innerHTML="";
+  var t=add("b","<span class=\"dots\"><span></span><span></span><span></span></span>");
+  setTimeout(function(){t.innerHTML=reply(q);cbm.scrollTop=cbm.scrollHeight;chips();},650);
+}
+function closeCb(){cb.classList.remove("open");document.getElementById("cbl").setAttribute("aria-expanded","false");}
+document.getElementById("cbl").onclick=function(){
+  cb.classList.toggle("open");
+  this.setAttribute("aria-expanded",cb.classList.contains("open")?"true":"false");
+  if(!started){started=true;add("b","¡Hola! 👋 Soy el asistente virtual de <b>Horizonte Laboral</b>. Puedo contarte sobre la ruta de 7 fases, los planes, los precios y las plataformas de empleo.");chips();}
+};
+document.getElementById("cbx").onclick=closeCb;
+document.getElementById("cbf").onsubmit=function(e){e.preventDefault();var v=cbi.value.trim();if(!v)return;cbi.value="";ask(v);};
+var tabs=document.querySelectorAll(".tab"),tps=document.querySelectorAll(".tp"),qi=document.getElementById("q");
+function showTab(i){tabs.forEach(function(t){var active=t.dataset.t==i;t.classList.toggle("on",active);t.setAttribute("aria-selected",active?"true":"false");});tps.forEach(function(p){var active=p.dataset.t==i;p.classList.toggle("on",active);p.hidden=!active;});}
+tabs.forEach(function(t){t.onclick=function(){qi.value="";filter();showTab(t.dataset.t);};});
+function filter(){
+  var v=nz(qi.value.trim()),any=false;
+  document.querySelectorAll(".row").forEach(function(r){var ok=!v||nz(r.textContent).indexOf(v)>-1;r.style.display=ok?"":"none";if(ok)any=true;});
+  if(v){tps.forEach(function(p){p.classList.add("on");p.hidden=false;});tabs.forEach(function(t){t.classList.remove("on");t.setAttribute("aria-selected","false");});}
+  else{showTab(0);}
+  document.getElementById("nores").hidden=any||!v;
+}
+qi.addEventListener("input",filter);
+</script>
+</body>
+</html>
